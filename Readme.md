@@ -2,6 +2,9 @@
 
 React Native Email Tag Input is a customizable React Native component that allows inputting email addresses in a tag-like format. It supports validation, keyboard navigation, custom rendering, and more.
 
+![Example GIF](assets/preview.gif)
+
+
 ## Installation
 
 Install the package using npm:
