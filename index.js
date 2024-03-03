@@ -10,7 +10,7 @@ import {
   Dimensions,
 } from "react-native";
 import React, { useEffect } from "react";
-
+import emailValidate from "@burak101/email-validate";
 export const { width: WIDTH, height: HEIGHT } = Dimensions.get("window");
 
 export default function EmailTagInput({
@@ -36,8 +36,9 @@ export default function EmailTagInput({
   }, [emailTags]);
 
   function validateEmail(emailAdress) {
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(emailAdress);
+    return emailValidate(emailAdress);
+    // var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    // return emailPattern.test(emailAdress);
   }
 
   const emailFilter = () => {
