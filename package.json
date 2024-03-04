@@ -1,6 +1,6 @@
 {
   "name": "react-native-email-tag-input",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A customizable React component for email input with tag-like interface. Supports validation, keyboard navigation, and more.",
   "main": "index.js",
   "scripts": {
